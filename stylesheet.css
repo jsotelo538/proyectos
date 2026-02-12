@@ -3,12 +3,36 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-      
+      scroll-behavior: smooth;
 }
 html, body {
     color: #ededed;
     background: #081b29;
   overflow-x: hidden;
+}
+ 
+.whatsapp-btn{
+  position: absolute;
+  z-index: 150;
+  background: #25D366;
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: fixed;
+  right:  20px;
+ bottom:   20px;
+  font-size: 35px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+transition: 0.3s;
+}
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.1);
 }
 .header{
     position: fixed;
@@ -282,10 +306,10 @@ html, body {
 }
  .about-img img{
     padding-bottom: 10%;
-    max-width: 630px;
+    max-width: 480px;
     height: auto;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 50%;
 }
 .about-text h2{
     font-size: 60px;
@@ -308,6 +332,9 @@ html, body {
    margin-bottom: 4rem; 
 }
 @media (max-width: 768px) {
+  .home-content p{
+    align-items: left;
+  }
   .about {
     grid-template-columns: 1fr; /* Una sola columna */
     padding: 40px 5%;
@@ -1110,7 +1137,12 @@ position: relative;
     padding: 20px;
     text-align: center;
   }
-
+.home-content p{
+  max-width: 220px;
+}
+.btn-box{
+  margin-top: 65px;
+}
   .contact-text h2 {
     font-size: 40px;
   }
